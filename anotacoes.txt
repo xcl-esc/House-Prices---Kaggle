@@ -1,0 +1,137 @@
+dia 07/01 cheguei ate o ponto de criar o grafico, vi que as casas tem cerca de 4 colunas que sao o padrao.
+mas existem duas colunas pra esquerda e direita onde os preços variam muito, que seriam nossos outliers, ou seja onde vemos o que mais 
+desvaloriza ou valoriza um imovel.
+E é exatamente onde queremos trabalhar. em como saber na hora de cadastrar/vender um imovel que coisas os tornam mais/menos valorizados
+
+dia 10/01
+diferença entre as casas
+
+sub class é uma classificação do tipo de casa como 1 andar, 2 andares, 1 andar sendo casa nova, 2 andres sendo casa velha e tals
+**AQUI TEM DIFERENÇAS NAO TÃO DISCERPANTES, mas sao importantes para levar em consideração.
+
+
+lotfrontage so tem discrepancia em casas acima da média, ou seja 
+frente de terreno acima acima de (preencer AQUI) é um requisito para ser listado como casa acima da média de valores
+
+
+lotarea já é meio obvio que aumentam os preços.
+mas sim, ha bastante discrepancia
+
+
+PRESTAR ATENCÃOA AQUI
+OVERALL DE QUALIDADE VIA SER ONDE TODAS AS SEÇÕES QUE AS ACIMA DA MEDIA SE DESTACAM DE FORMA VORAZ.
+QUERO FAZER UMA SEÇÃO SO PRA EXPLICAR, OU SEJA COLOCAR TUDOQ UE TORNA O OVERALL DAS CASAS CARAS TAO MAIS ALTO QUE AS OUTRAS.
+1 lotfrontage
+2 lotarea
+3
+
+
+overallcondition é onde tem uma informação estranha, o resultado medio de casas na media é melhor que das duas outras categorias
+ou seja, conclusões:
+se o overall geral da sua casa é mt alto, nao precisa pensar mt em condição da  casa, isso pode ser pelo fato de ter alta quantidade de area de revestimento de alvenaria ja pronta?
+nao sei.
+mas onde a condição da sua casa obrigatoriamente tem de ser alta é se sua casa particpa das condiçoes para preço medio.
+
+
+yearbuilt mostra que casas mais novas sao acima da media de preço, isso deve interferir na condição da casa, ja que uma casa mais recente precisará de reforma mais tarde que uma casa
+mais antiga
+AQUI PODEMOS TER TOQUES SOBRE ISSO, POR EXEMPLO VC DIZ O ANO DA SUA CASA E O MODELO JA DIZ QUE PELO ANO, UMA REFORMA É RECOMENDADA
+
+
+YearRemodAdd AQUI ANO DE REFORMA DA CASA
+TANTO NO ANO DE CONSTRUÇÃO COMO DE REFORMA DA CASA, OS MAIS RECENTES ESTAO LIDERANDO NO ACIMA DA MEDIA
+
+
+MasVnrArea REVESTIMENTO EM ALVENARIA TIJOLO E PEDRAS DECORATIVAS AUMENTA EM CASA ACIMA DA MEDIA, MAS FODA-SE
+DA PRA DAR UM CONSELHO, COMO COLOCAR ISSO EM CASAS PRA AUMENTAR O VALOR DA CASA
+
+
+TotalBsmtSF e todos os bsmtsf, os tipos variam mas precebemos que as casas acimda media lideram tanto em acabamento ruim quanto em acabamento bom e as de medio preço so lideram em 
+acabamento medio. ou sej ouy nao fazem, ou fazem o melhor acabamento pra maior parte da area
+AQUI NAO MUDA PORRA NENHUMA ENTAO NO PREÇO. NAO É NOSSO alvo
+
+
+1stFlrSF CASAS ACIMA DA MEDIA COM METRAGEM ALTA DO PRIMEIROA ANDAR
+2ndFlrSF  LIDeRAm tb
+
+
+GrLivArea aqui parece a area total construida acima do solo, tipo as partes que tu realmente usa e compoe a casa.
+aqui as casas mais caras lideram, mas na media nao fica longe. ja as baratas ficam bem aquem aqui.
+
+
+BsmtFullBath e BsmtHalfBath  quase nenhuma casa tem banheiro no porao?????? entao pra que ter um porao? um quadrado onde nao da pra mijar?
+MAS É INTERESANTE SABER QTS BANHEIROS NO TOTAL A CASA POSSUI, ISSO AUMENTA UM POUCO O PREÇO, POR EXEMPLO MODELO RECOMENDA: CONTRUA BANHEIRO NO PORAO, SOBE X DE PREÇO
+
+
+BOA PARTE DAS CASAS É DE 2 QUARTOS
+E A AS CARA COMO SEMPRE TENDO MAIS CONFORTO TENDO EM MEDIA 3 OU MAIS
+
+
+ACIMA DA MEDIA GARAGENS PARA 2 CARROS OU MAIS
+AREA DA GARAGEM POR ESSE MOTIVO É DE 2 A 3 VEZES MAIOR EM CASAS ACIMA DA MEDIA
+
+
+DECK DE MADEIRA É UM DIFERENCIAL BEM ALTO EM CASAS ACIMA DA MEDIA. MT DIFERENÇA AQUI
+
+
+imagino que o OpenPorchSF tenha ligação com o deck de madeira  isso aqui é tipo uma area dea alzer que pode estar ligada a tu sentar na porcaria do deck e acender aquele que deixou o bruce
+wayne
+
+
+EnclosedPorch entao o fechado diminui o valor da casa?  isso é tipo uma area fechada sem uso por isso o valor desce
+
+
+MiscVal  isso aqui me faz pensar que ter coisas que nao podem ser registradas como valor padrao de uum casa diminui seu preço. sera que ta certo? ou naos e converte em valorização, logo
+nao perca tempo cosntruindo coisas sem sentido tipo a porra dum galpao quie nao serve pra porra nehumka se tu tem um porao. la que é lugar de botar porcaria ouse proteger de um furacao
+catrina enraivecido
+
+
+por fim, nada novo sob o sol. casas mais novas vendidas primeiro e ate no mesmo ano, e as full velhas vendidas so no ano seguinte. foda.
+
+
+PAUSA PROXIMO PASSO VERIFICAR SE PRECISO DOS PASSOS 4 E 5 OU SE MUDAM AGORA QUE EU ANALISEI MANUALMENTE. JA VOLTO AS 14:21
+
+
+Novas anotações observadas no grafico do passo 4:
+
+Tem algo interessante a se observar, nas casas do preço médio alguma batem overall de 7 e mesmo assim estao encaixadas no preço medio. quero saber o que as fez nao entrar na faixa de preço 
+acima da média
+
+
+sabe deus pq mas existe uma ou mais casas com mais de 5k metros quadrados de area e estaoe m preço medio. em contraponto, não há nenhuma casa em preço acima que tenha tudo isso. pq? saberemos
+*aqui talvez seja valido filtrar essa unica casa e compará-la com a média de casas do preço acima da media.
+aqui diz que a área da desgraçada da casa é 5642, pq diabos uma area tao grande ficou no médio deve ser velha ou ser de area não construída.
+
+
+garagem mesma fita, tem uma que tem 4 e é média, mas tendo 3 ja práticamente é acima.
+
+
+quero dar uma olhada em pq algumas casas de 1880 sao de preços diferentes, ja que teóricamente deveriam ser preços parecidos. outro fator a observar aqui
+
+
+a emagadora quantidade de casas reformadas de 1960 ate 2000 esta no preço medio. logo, permanece o pensamenteo de que reformar a casa antes de vender, adcionar vaga na garagem, contruir
+um banheiro no porao ou em outros comodos como fazer um quarto simples virar uma suite podem ser as reformas que tornarão sua casa mais vendável e mais cara tb.
+
+
+decks de madeira sao importantes
+
+
+no lotarea passou do 50 ja é praticamente acima no preço
+
+
+duas casas no Frontage tem 313 e uma é acima e a outra é media. pq?
+
+Obervando o passo 5 esses 6 fatores é oq ue devem contar para um overall maior e consequentemente para um preço mais alto por casa
+
+WoodDeckSF
+GarageArea
+GarageCars
+TotalBsmtSF
+GrLivArea
+LotArea
+
+
+achei meu outlier. id 1299  com overall de 10 pontos, mas numa vizinhança Edwards(perto de linha férrea=paia demais), overallcondition = 5 ou seja ta acabada, mesmo que o ano dela seja 
+2008 de CONSTRUÇÃO, a casa ta uma porra.
+
+
