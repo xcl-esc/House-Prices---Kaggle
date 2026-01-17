@@ -6,6 +6,8 @@ Projeto de análise exploratória e modelagem preditiva utilizando o dataset
 ## Objetivo
 Identificar os principais fatores que influenciam o preço de venda de imóveis
 e construir um modelo preditivo com base nesses atributos.
+Gerando assim recomendações de alterações no imóvel que possam aumentar o seu valor e também
+ter uma base de valor inicial do imóvel.
 
 ## Dataset
 - Fonte: Kaggle – House Prices
